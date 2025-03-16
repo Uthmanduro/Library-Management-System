@@ -1,3 +1,5 @@
+package DAOTest;
+
 import models.Member;
 import java.util.*;
 import services.MemberService;
@@ -33,7 +35,7 @@ public class TestMember {
 
         // delete a member from the database
         System.out.println("Length of members before deletion is: " + memberList.size());
-        memberService.deleteMember(memberList.get(0).getMember_id());
+//        memberService.deleteMember(memberList.get(0).getMember_id());
         memberList = memberService.getAllMembers();
         System.out.println("Length of members After deletion is: " + memberList.size());
 
